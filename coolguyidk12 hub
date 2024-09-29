@@ -1,0 +1,26 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+print("gravity falls is the best show!!") 
+local Window = Library.CreateLib("coolguyidk12 hub", "DarkTheme")
+local Tab = Window:NewTab("Tab1")
+local Section = Tab:NewSection("coolguyidk12 hub")
+Section:NewButton("auto clicker for a rot game", "ButtonInfo", function()
+while wait() do
+game:GetService("ReplicatedStorage").Click:FireServer()
+end
+    print("Clicked")
+end)
+Section:NewButton("auto clicker for a rot game", "ButtonInfo", function()
+while wait() do
+game:GetService("ReplicatedStorage").Click:FireServer()
+end
+    print("Clicked")
+end)
+Section:NewButton("become scp morph 1 !game in info! ", "scp games and monster", function()
+local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage").MorphEvent:FireServer(unpack(args))
+
+    print("Clicked")
+end)
